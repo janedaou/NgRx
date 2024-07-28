@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserListComponent implements OnInit {
   users = [
-    { id: 1, name: 'User One' },
-    { id: 2, name: 'User Two' },
+    { id: 1, name: 'Jane Daou' },
+    { id: 2, name: 'Angie Daou' },
     // more users
   ];
 
@@ -19,4 +19,9 @@ export class UserListComponent implements OnInit {
   trackById(index: number, user: any): number {
     return user.id;
   }
+
+  onAction(): void {
+    alert('You just clicked the action button. Press OK to exit.');
+  }
+
 }

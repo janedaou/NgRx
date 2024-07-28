@@ -1,4 +1,5 @@
 <ul>
     <li *ngFor="let user of users; trackBy: trackById">{{ user.name }}</li>
 </ul>
-  
+<button (click)="onAction()" (keydown.enter)="onAction()">Action Button!</button>
+<p>{{ 'For example these words are written in uppercase due to the custom pipe.' | custom }}</p>

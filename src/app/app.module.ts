@@ -12,6 +12,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { CustomPipe } from './custom.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     LoginComponent,
     SignupComponent,
     UserListComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    CustomPipe
   ],
   imports: [
     BrowserModule,
